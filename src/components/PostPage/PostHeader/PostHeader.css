@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.header-container{
+    padding: 10px 20px 0px 13px;
+    margin: 13px;
+}
+
+.title{ 
+    margin-top: 10px;
+    font-size: 70px;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    color: #3c3c3c;  
+}

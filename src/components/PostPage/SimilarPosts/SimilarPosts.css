@@ -1,0 +1,16 @@
+
+.similar-posts-list{
+    padding-left: 0px;
+    max-width: 260px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 18px;
+    row-gap: 16px;
+}
+.similar-posts-list hr{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-top: 1px #7f7f7f;
+}

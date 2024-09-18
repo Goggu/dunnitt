@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@700;800&family=Dancing+Script:wght@400..700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap');
+
+
+.menu-list{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.custom-icon {
+    min-width: 10px; /* Adjust this value to decrease the space */
+    margin-right: 0px; /* Add or adjust this value for fine-tuning */
+}
+.icons-in-sidebar {
+    width: 22px; /* Adjust icon size if needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle; /* Align the icon vertically with the text */
+}
+

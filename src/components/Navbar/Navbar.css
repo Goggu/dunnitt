@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@700;800&family=Calistoga&family=Dancing+Script:wght@400..700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar{
+    position: fixed;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;  
+    width: 100%;
+    padding: 3px 0px;    
+    background-color: #ffffff;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+.navbar-left .sidebar-icon{
+    width: 29px;
+    height: 29px;
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+.navbar .app-logo h2{
+    padding: 28px 30px 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Zain", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.navbar-center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;    
+}
+.search-input{
+    width: 55%;
+    height: 13px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    padding-right: 20px; 
+}
+.navbar-right-add-items{    
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.navbar-right img{
+    width: 28px;
+    height: 28px;
+    align-items: center;
+}
+.navbar-right h2{
+    font-family:'Zain', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+    align-items: center;
+}
+.dark-mode-icon{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+/* Wrapper for notification icon and dropdown */
+.notification-wrapper {
+    position: relative;
+}
+/* Notification dropdown styling */
+.notification-dropdown {
+    position: absolute;
+    top: 40px; /* Adjust the top value according to your layout */
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.notification-dropdown ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+} 
+.notification-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+} 
+.notification-dropdown li:hover {
+    background-color: #f4f4f4;
+}
+  

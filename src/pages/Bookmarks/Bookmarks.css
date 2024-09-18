@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.post-display-list{
+    padding: 50px 75px 10px 75px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    margin-top: 14px;
+    gap: 13px;
+    row-gap: 25px;   
+}

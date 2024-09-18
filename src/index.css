@@ -1,0 +1,28 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.app{
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
