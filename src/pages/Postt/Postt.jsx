@@ -35,6 +35,7 @@ const Postt = () => {
             <hr style={{ border: 'none', borderTop: '1px solid #ddd', margin: '5px 0px 5px 36px', opacity: 0.6, width: '92%' }}/>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
 
+
               <div className="meta-info">    
                 <img src={`http://localhost:5173${article.profilepic}`} alt={article.owner} />
                 <p>&nbsp;{article.owner}</p>                
