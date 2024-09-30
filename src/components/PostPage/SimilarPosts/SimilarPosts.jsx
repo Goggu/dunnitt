@@ -13,8 +13,8 @@ const SimilarPosts = () => {
     <Box className='similar-posts-list'>
       
       {post_list.map((item) =>{
-        return <Link to={`/article/${item._id}`} key={item._id}>     {/* Wrap Eachitem with Link */}
-          <EachSimilarPost id={item._id} namee={item.namee} image={item.image} />
+        return <Link to={`/article/${item.id}`} key={item.id}>     {/* Wrap Eachitem with Link */}
+          <EachSimilarPost id={item.id} namee={item.namee} image={item.image} />
           <hr />
         </Link>
       })}

@@ -1,78 +1,77 @@
-import React, { useState } from 'react';
+
+import React, { useState } from "react";
+import axios from "axios";
 import './AddPost.css';
-import { post_list } from '../../assets/assets';
 
 const AddPost = () => {
-  const [namee, setNamee] = useState('');
-  const [owner, setOwner] = useState('');
-  const [image, setImage] = useState('');
-  const [content, setContent] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [owner, setOwner] = useState("");
+  const [date, setDate] = useState("");
+  const [image, setImage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newArticle = {
-      _id: (post_list.length + 1).toString(), // Assuming IDs are sequential integers
-      namee,
+
+    const newPost = {
+      title,
+      content,
       owner,
-      image,
-      content: content.split('\n'), // Split content by new lines to create paragraphs
+      date,
+      image
     };
-    post_list.push(newArticle); // Add the new article to the post_list
-    // Reset form
-    setNamee('');
-    setOwner('');
-    setImage('');
-    setContent('');
+
+    try {
+      await axios.post("http://localhost:3000/post_list", newPost); // Assuming JSON server is running on localhost:3000
+      alert("Article uploaded successfully!");
+    } catch (error) {
+      console.error("Error uploading article:", error);
+    }
   };
 
   return (
-    <div className='form-container'>
-      <h2 className='add-post-heading'>Add New Article</h2>
-      <form className="add-post-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <div className='textwrap'>
-            <input
-              type="text" placeholder="Title" 
-              value={namee}
-              onChange={(e) => setNamee(e.target.value)}
-              required
-              className="title-input"
-            />
-          </div>
+    <div className="upload-container">
+      <h2>Create New Article</h2>
+      <form onSubmit={handleSubmit}>
+
+        <div>
+          <label>Title:</label>
+          <input type="text" value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            required />
         </div>
 
-        <div className="form-group">
-          <input
-            type="text" placeholder='Author'
-            value={owner}
-            onChange={(e) => setOwner(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <input
-            type="file" 
-            accept="image/*" 
-            onChange={(e) => {
-              const file = e.target.files[0];
-              if (file) {
-                setImage(file);
-              }
-            }}
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <textarea
-            value={content} placeholder="Content"
+        <div>
+          <label>Content:</label>
+          <textarea value={content}
             onChange={(e) => setContent(e.target.value)}
-            required
-          />
+            required />
         </div>
 
-        <button type="submit">Add Article</button>
+        <div>
+          <label>Owner:</label>
+          <input type="text" value={owner}
+            onChange={(e) => setOwner(e.target.value)}
+            required />
+        </div>
+
+        <div>
+          <label>Date:</label>
+          <input type="date" value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required />
+        </div>
+
+        <div>
+          <label>Image:</label>
+          <input type="file" accept="image/*" onChange={handleImageChange} required />
+        </div>
+
+        <button type="submit">Upload Article</button>
       </form>
     </div>
   );

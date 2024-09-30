@@ -52,7 +52,7 @@
     align-items: center;
     cursor: pointer;
     justify-content: end;
-    padding: 12px 40px;
+    padding: 12px 60px 12px 0px;
     gap: 12px;
 }
 .like-icon{
@@ -75,9 +75,9 @@
 .content{
     font-family: "Noto Serif Georgian", serif;
     font-weight: 400;
-    font-size: 20px;
-    
-    padding: 14px 10px;
+    font-size: 19px;
+    max-width: 115vh;
+    padding: 14px 55px;
     text-align: justify;
     line-height: 1.8;
 }

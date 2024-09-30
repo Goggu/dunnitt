@@ -1,6 +1,7 @@
 import logo from './logo.png'
 import header_img from './header_img.jpeg'
 import like_icon from './like_icon.png'
+import like_icon_filled from './like_icon_filled.png'
 import Add_Post_Icon from './add_post_icon.png'
 import profile_pic from './profile_pic.png' 
 import menubar_icon from './menubar_icon.png'
@@ -39,6 +40,7 @@ export const assets = {
     sidebar_icon,
     header_img,
     like_icon,
+    like_icon_filled,
     Add_Post_Icon,
     profile_pic,
     menubar_icon,
@@ -81,17 +83,7 @@ export const post_list = [
 	    owner: "John Wick",
         profilepic: profile_pic,
 	    datee: "Saturday, 20 July",
-	    content: `There are numerous really good sites for intelligence on the Darknet/Dark Web, so if I did not mention a certain one, I apologize. Feel free to add your favorites in the comments! As I was writing this article, I realized it started to get bigger and bigger, so I am making this a part 1, with another part or 2 or 3.. Coming at a later date. Ransomware and Forums will also be on a separate article as dedicated time to that would make this article massive. 
-
-I will briefly go into some of these resources you should know about when doing Cyber Threat Intelligence, along with some screenshots. A lot of these I will go into further in a future Medium article, as most deserve their own. 
-
-Some of these have a Clearnet address, but all of them have a .onion address and most have no Clearnet address whatsoever. Regretfully, I am unable to share .onion links, otherwise Medium will close my account. I am looking for clarification on this from their support team, but I have not received an answer. 
-
-If there is a Clearnet location all you really need to do is a web search using the names below, same can be said for a .onion only site.. but with a little more effort involved. Whether you are a researcher or someone who just enjoys exploring the Dark Web, I hope these resources are of assistance to you. comes to keeping an online presence, privacy and security is paramount. 
-
-But you might be unaware of how much of your personal information and data is actually floating around online. And all it takes for someone to get a hold of that data is for them to purchase that information from data brokers, such as people search sites. 
-
-Luckily, the folks at Incogni are here to help ensure that that doesn’t happen. Ultimately helping you take back control and remove your personal information from the internet so you can keep your data private and secure. Before we get into how you can remove your personal information from the internet though let’s break down what’s actually happening.`
+	    content: `There are numerous really good sites for intelligence on the Darknet/Dark Web, so if I did not mention a certain one, I apologize. Feel free to add your favorites in the comments! As I was writing this article, I realized it started to get bigger and bigger, so I am making this a part 1, with another part or 2 or 3.. Coming at a later date. Ransomware and Forums will also be on a separate article as dedicated time to that would make this article massive. I will briefly go into some of these resources you should know about when doing Cyber Threat Intelligence, along with some screenshots. A lot of these I will go into further in a future Medium article, as most deserve their own. Some of these have a Clearnet address, but all of them have a .onion address and most have no Clearnet address whatsoever. Regretfully, I am unable to share .onion links, otherwise Medium will close my account. I am looking for clarification on this from their support team, but I have not received an answer. If there is a Clearnet location all you really need to do is a web search using the names below, same can be said for a .onion only site.. but with a little more effort involved. Whether you are a researcher or someone who just enjoys exploring the Dark Web, I hope these resources are of assistance to you. comes to keeping an online presence, privacy and security is paramount. But you might be unaware of how much of your personal information and data is actually floating around online. And all it takes for someone to get a hold of that data is for them to purchase that information from data brokers, such as people search sites. Luckily, the folks at Incogni are here to help ensure that that doesn’t happen. Ultimately helping you take back control and remove your personal information from the internet so you can keep your data private and secure. Before we get into how you can remove your personal information from the internet though let’s break down what’s actually happening.`
     },
     {
         _id: "2",

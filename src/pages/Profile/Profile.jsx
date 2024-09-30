@@ -1,4 +1,5 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useContext } from 'react';
+import { StoreContext } from '../../context/StoreContext';
 import './Profile.css';
 import { Box, Typography, Avatar } from '@mui/material';
 import { assets } from '../../assets/assets';
@@ -6,34 +7,31 @@ import { assets } from '../../assets/assets';
 const Profile = memo(() => {
   const [activeTab, setActiveTab] = useState('articles');
 
-  const user = {
-    name: 'Goku',
-    username: '@goggu-p45',
-    bio: 'pbafgengr lbh znqr vg',
-    profilePicture: `http://localhost:5173${assets.profile_pic}`, // Replace with actual image URL
-  };
+  const {Profile} = useContext(StoreContext);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
 
+  console.log(`http://localhost:3000/profile`);
+
   return (
     <Box className="profile-container">
       <Box className="profile-header">
-        <Avatar
-          alt={user.name}
-          src={user.profilePicture}
-          className="profile-picture"
+        <Avatar 
+          alt={profile.name} 
+          src={profile.profilepic} 
+          className="profile-picture" 
         />
         <Box className="profile-info">
           <Typography variant="h4" className="profile-name">
-            {user.name}
+            {Profile.name}
           </Typography>
           <Typography variant="subtitle1" className="profile-username">
-            {user.username}
+            {Profile.username}
           </Typography>
           <Typography variant="body1" className="profile-bio">
-            {user.bio}
+            {Profile.bio}
           </Typography>
         </Box>
       </Box>
